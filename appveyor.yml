@@ -45,10 +45,10 @@ cache:
   - target
 
 build_script:
-  - cmd: cargo build --target %TARGET%
+  - cmd: cargo build --target %TARGET% --release
 
 test_script:
-  - cmd: cargo test --target %TARGET%
+  - cmd: cargo test
 
 artifacts:
   - path: 'target\release\*.exe'

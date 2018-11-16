@@ -1,5 +1,4 @@
 extern crate crypto;
-
 extern crate rand;
 extern crate sha2;
 extern crate ed25519_dalek;
@@ -13,13 +12,14 @@ extern crate unicode_normalization;
 
 use itertools::Itertools;
 
-use std::time::{Instant};
+use std::time::Instant;
 use std::str::FromStr;
 use std::iter::FromIterator;
 use std::io;
 
 use num_bigint::BigUint;
-use num_traits::{Zero};
+use num_traits::Zero;
+
 use unicode_normalization::UnicodeNormalization;
 
 use sodiumoxide::crypto::sign::ed25519;
@@ -28,14 +28,13 @@ use sodiumoxide::crypto::sign::Seed;
 use blake2_c::blake2b;
 use blake2_c::Digest as BlakeDigest;
 
-use crypto::pbkdf2::{pbkdf2};
+use crypto::pbkdf2::pbkdf2;
 use crypto::hmac::Hmac;
 use crypto::sha2::Sha512;
 use crypto::sha2::Sha256;
 use crypto::digest::Digest;
 
 use itertools::join;
-
 
 macro_rules! product {
         ( $string: expr, $repeat: expr) => {
@@ -70,8 +69,6 @@ fn brute_force(email: String, mnemonic: String, address: String, prefix_custom_c
             permutations += 1;
         }
     }
-
-
 
 }
 
