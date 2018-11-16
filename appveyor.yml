@@ -1,8 +1,6 @@
 image: Visual Studio 2017
 
 environment:
-  SODIUM_LIB_DIR: C:/Tools/vcpkg/packages/libsodium_x64-windows/lib/libsodium.lib
-  SODIUM_INC_DIR : C:/Tools/vcpkg/packages/libsodium_x64-windows/include
   SODIUM_STATIC : 1
   LLVM_VERSION: 6.0.1
   matrix:
