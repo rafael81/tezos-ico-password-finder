@@ -1,7 +1,6 @@
 extern crate crypto;
 extern crate rand;
 extern crate sha2;
-extern crate ed25519_dalek;
 extern crate sodiumoxide;
 extern crate blake2_c;
 extern crate arrayvec;
