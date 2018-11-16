@@ -1,7 +1,8 @@
 image: Visual Studio 2017
 
 environment:
-  SODIUM_STATIC : 1
+  VCPKGRS_DYNAMIC: 1
+  SODIUM_STATIC: 1
   LLVM_VERSION: 6.0.1
   matrix:
   - TARGET: x86_64-pc-windows-msvc
