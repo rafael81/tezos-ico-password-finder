@@ -1,0 +1,17 @@
+[package]
+name = "tz-brute-rust"
+version = "0.1.0"
+authors = ["jcm1981@gmail.com"]
+
+[dependencies]
+rust-crypto = "^0.2"
+ed25519-dalek = "0.8.1"
+sha2 = "0.8.0"
+rand = "0.5"
+sodiumoxide = "0.1.0"
+blake2_c = "0.3.3"
+arrayvec = "0.4.6"
+num-bigint = "0.2"
+num-traits = "0.2.6"
+itertools = "0.7.3"
+unicode-normalization = "0.1.7"
