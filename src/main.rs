@@ -1,15 +1,14 @@
 extern crate crypto;
-extern crate rand;
 extern crate sha2;
 extern crate sodiumoxide;
 extern crate blake2_c;
-extern crate arrayvec;
 extern crate num_bigint;
 extern crate num_traits;
 extern crate itertools;
 extern crate unicode_normalization;
 
 use itertools::Itertools;
+use itertools::join;
 
 use std::time::Instant;
 use std::str::FromStr;
@@ -32,8 +31,6 @@ use crypto::hmac::Hmac;
 use crypto::sha2::Sha512;
 use crypto::sha2::Sha256;
 use crypto::digest::Digest;
-
-use itertools::join;
 
 macro_rules! product {
         ( $string: expr, $repeat: expr) => {
