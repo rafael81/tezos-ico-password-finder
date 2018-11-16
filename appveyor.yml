@@ -1,7 +1,9 @@
 image: Visual Studio 2017
 
 environment:
-  VCPKGRS_DYNAMIC: 1
+  SODIUM_LIB_DIR: C:/Tools/vcpkg/packages/libsodium_x64-windows/lib/libsodium.lib
+  SODIUM_INC_DIR : C:/Tools/vcpkg/packages/libsodium_x64-windows/include
+  SODIUM_STATIC : 1
   LLVM_VERSION: 6.0.1
   matrix:
   - TARGET: x86_64-pc-windows-msvc
@@ -45,7 +47,7 @@ cache:
   - target
 
 build_script:
-  - cmd: cargo build --target %TARGET% --release
+  - cmd: cargo build --release
 
 test_script:
   - cmd: cargo test
