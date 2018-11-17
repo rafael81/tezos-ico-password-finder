@@ -1,5 +1,5 @@
 [package]
-name = "tz-brute-rust"
+name = "tezos-ico-password-finder"
 version = "0.1.0"
 authors = ["jcm1981@gmail.com"]
 

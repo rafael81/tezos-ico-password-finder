@@ -26,4 +26,4 @@ This is the address you were given as your Tezos address upon contribution.
 This is the email address you used when you contributed. This is CASE SENSITIVE.
 
 ##### Mnemonic (e.g. apples cat radio...):
-This is the mnemonic you received upon contribution, it will be within the PDF you downloaded. It's a long string of words all in lowercase separated by spaces.ved upon contribution, it will be within the PDF you downloaded. It's a long string of words all in lowercase separated by spaces.
+This is the mnemonic you received upon contribution, it will be within the PDF you downloaded. It's a long string of words all in lowercase separated by spaces.
